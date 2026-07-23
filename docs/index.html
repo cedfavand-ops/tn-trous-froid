@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tn — Trous à froid de France</title>
+<style>
+  :root{
+    --bg:#0c1420; --bg-panel:#111d2e; --line:#22334a; --text:#eaf1f8; --muted:#7d92aa;
+    --cold-1:#3aa0e0; --cold-2:#4fc3d9; --mild:#e8e2c9; --warm-1:#e0a94f; --warm-2:#d9603a;
+    --badge:#1a2942;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:radial-gradient(ellipse 900px 400px at 15% -10%, #14263d 0%, transparent 60%),var(--bg);
+    color:var(--text);font-family:"Segoe UI",system-ui,-apple-system,sans-serif;padding:32px 18px 60px;}
+  .wrap{max-width:760px;margin:0 auto;}
+  .eyebrow{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--cold-2);margin:0 0 8px;}
+  h1{margin:0 0 6px;font-size:28px;font-weight:700;letter-spacing:-0.01em;}
+  .sub{color:var(--muted);font-size:14px;margin:0;line-height:1.5;}
+  .datebar{display:flex;justify-content:space-between;align-items:baseline;margin-top:18px;padding-top:14px;
+    border-top:1px solid var(--line);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:var(--muted);}
+  table{width:100%;border-collapse:collapse;margin-top:22px;}
+  thead th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+    font-weight:600;padding:0 10px 10px;border-bottom:1px solid var(--line);}
+  thead th.tn-col{text-align:center;}
+  tbody td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:middle;}
+  tbody tr:hover{background:rgba(255,255,255,0.02);}
+  .station{font-weight:600;font-size:14.5px;}
+  .meta{color:var(--muted);font-size:12px;margin-top:2px;}
+  .src{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;letter-spacing:.03em;
+    color:var(--muted);background:var(--badge);padding:2px 6px;border-radius:4px;margin-top:5px;}
+  .tn-cell{text-align:center;}
+  .tn-pill{display:inline-block;min-width:64px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:17px;
+    font-weight:700;padding:6px 10px;border-radius:8px;color:#0c1420;}
+  .tn-pill.na{background:transparent;border:1px dashed var(--line);color:var(--muted);font-size:12px;
+    font-weight:400;font-style:italic;}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;font-size:11px;color:var(--muted);align-items:center;}
+  .legend .chip{width:12px;height:12px;border-radius:3px;display:inline-block;margin-right:5px;vertical-align:-2px;}
+  footer{margin-top:34px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;line-height:1.6;}
+  footer b{color:var(--text);}
+  code{background:var(--badge);padding:1px 5px;border-radius:4px;font-size:11.5px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Réseau · Trous à froid de France</p>
+    <h1>Tn de la nuit écoulée</h1>
+    <p class="sub">Températures minimales relevées cette nuit sur les 15 stations suivies. Générée automatiquement.</p>
+    <div class="datebar">
+      <span>23 July 2026</span>
+      <span>1 / 16 stations lues automatiquement</span>
+    </div>
+  </header>
+  <table>
+    <thead><tr><th>Station</th><th class="tn-col">Tn</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="station">St Christol d'Albion</div>
+          <div class="meta">Vaucluse (84) · 824 m</div>
+          <span class="src">INFOCLIMAT</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="erreur: 403 Client Error: Forbidden for url: https://www.infoclimat.fr/observations-meteo/temps-reel/saint-christol/STATIC0257.html">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Lachapelle-Graillouse – Moulin de Courbet</div>
+          <div class="meta">Ardèche (07) · 1134 m</div>
+          <span class="src">INFOCLIMAT</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="erreur: 403 Client Error: Forbidden for url: https://www.infoclimat.fr/observations-meteo/temps-reel/lachapelle-graillouse-moulin-de-courbet/STATIC0407.html">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Combe de l'Oscence</div>
+          <div class="meta">La Chapelle-en-Vercors (26) · 975 m</div>
+          <span class="src">INFOCLIMAT</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="erreur: 403 Client Error: Forbidden for url: https://www.infoclimat.fr/observations-meteo/temps-reel/la-chapelle-en-vercors-combe-de-l-oscence/000UF.html">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Combe de Darbounouse</div>
+          <div class="meta">La Chapelle-en-Vercors (26) · 1282 m</div>
+          <span class="src">INFOCLIMAT</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="erreur: 403 Client Error: Forbidden for url: https://www.infoclimat.fr/observations-meteo/temps-reel/la-chapelle-en-vercors-combe-de-darbounouse/STATIC0213.html">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Doline de Solaison</div>
+          <div class="meta">Brizon (74) · 1479 m</div>
+          <span class="src">INFOCLIMAT</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="erreur: 403 Client Error: Forbidden for url: https://www.infoclimat.fr/observations-meteo/temps-reel/brizon-doline-de-solaison/STATIC0305.html">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Reculfoz</div>
+          <div class="meta">Doubs (25) · 1010 m</div>
+          <span class="src">INFOCLIMAT</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="erreur: 403 Client Error: Forbidden for url: https://www.infoclimat.fr/observations-meteo/temps-reel/reculfoz-combe/STATIC0015.html">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Gréolières les Neiges</div>
+          <div class="meta">Doline, 06 · 1388 m</div>
+          <span class="src">MÉTÉORAVANEL</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="valeur introuvable sur la page">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Beuil Cumba Clava</div>
+          <div class="meta"></div>
+          <span class="src">DATACAKE</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="aucune donnée renvoyée">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Issanlas</div>
+          <div class="meta">Plateau ardéchois (07) · 1180 m</div>
+          <span class="src">DATACAKE</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="aucune donnée renvoyée">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Causse Méjean – Doline du Fraisse</div>
+          <div class="meta">48</div>
+          <span class="src">DATACAKE</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="aucune donnée renvoyée">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Tignes – Pramécou</div>
+          <div class="meta"></div>
+          <span class="src">DATACAKE</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="aucune donnée renvoyée">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Le Dévoluy – Vallon d'Ane</div>
+          <div class="meta"></div>
+          <span class="src">DATACAKE</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="aucune donnée renvoyée">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Chaud Clapier</div>
+          <div class="meta"></div>
+          <span class="src">DATACAKE</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="aucune donnée renvoyée">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Le Praz de Lys – Lac de Roy</div>
+          <div class="meta"></div>
+          <span class="src">DATACAKE</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="aucune donnée renvoyée">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">La Pesse – Le Cernétrou</div>
+          <div class="meta"></div>
+          <span class="src">DATACAKE</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill na" title="aucune donnée renvoyée">à saisir</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="station">Lussan La Lèque</div>
+          <div class="meta"></div>
+          <span class="src">ECOWITT</span>
+        </td>
+        <td class="tn-cell"><span class="tn-pill" style="background:var(--warm-2);color:#0c1420">10.6°</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="legend">
+    <span><span class="chip" style="background:var(--cold-1)"></span>≤ −2°</span>
+    <span><span class="chip" style="background:var(--cold-2)"></span>−2° à 0°</span>
+    <span><span class="chip" style="background:var(--mild)"></span>0° à 5°</span>
+    <span><span class="chip" style="background:var(--warm-1)"></span>5° à 10°</span>
+    <span><span class="chip" style="background:var(--warm-2)"></span>&gt; 10°</span>
+  </div>
+  <footer>
+    Page générée automatiquement le 23/07/2026 15:41 (heure de Paris) par <code>generate_tn_page.py</code>.
+  </footer>
+</div>
+</body>
+</html>
