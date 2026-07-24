@@ -1,10 +1,7 @@
 name: Mise à jour des Tn (trous à froid)
 
 on:
-  schedule:
-    # 07:10 UTC = 09:10 à Paris en été (CEST) / 08:10 en hiver (CET).
-    # Ajustez à 08:10 UTC si vous voulez viser 09:10 précisément en hiver.
-    - cron: "10 7 * * *"
+
   workflow_dispatch: {}   # permet de lancer manuellement depuis l'onglet Actions
 
 permissions:
